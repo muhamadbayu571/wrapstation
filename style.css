@@ -1,0 +1,71 @@
+:root{
+  --red-600:#b71c1c;
+  --red-700:#8e0f0f;
+  --soft-bg:#fff5f5;
+}
+
+body.bg-soft-red {
+  background: linear-gradient(180deg, rgba(183,28,28,0.06), rgba(0,0,0,0.00));
+  min-height:100vh;
+}
+
+.header {
+  background:var(--red-600);
+  color:white;
+}
+
+.logo {
+  width:64px;
+  height:64px;
+  border-radius:10px;
+  object-fit:cover;
+  box-shadow:0 4px 12px rgba(0,0,0,0.12);
+}
+
+.card { border: none; border-radius:12px; }
+
+.text-red { color:var(--red-700); }
+
+.signature-box {
+  width:100%;
+  height:200px;
+  border:2px dashed rgba(0,0,0,0.08);
+  border-radius:8px;
+  background:white;
+}
+
+.preview-thumb {
+  width:100%;
+  height:120px;
+  object-fit:cover;
+  border-radius:6px;
+  border:1px solid #eee;
+}
+
+.photo-item {
+  position:relative;
+  padding:6px;
+  background:#fff;
+  border-radius:8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.photo-item .remove-photo {
+  position:absolute;
+  top:6px;
+  right:6px;
+  z-index:10;
+}
+
+.photo-note {
+  resize:vertical;
+  min-height:50px;
+  max-height:120px;
+}
+
+#miniPreview img { max-width:100%; height:auto; display:block; margin-bottom:4px; }
+
+.accordion .card { box-shadow:none; }
+
+.btn-danger { background: linear-gradient(180deg,var(--red-600),var(--red-700)); border:none; }
+.btn-outline-danger { border-color:var(--red-600); color:var(--red-600); }
